@@ -39,7 +39,7 @@ export default function CartModal({ cart }: { cart: Cart | undefined }) {
 
   return (
     <>
-      <button aria-label="Open cart" onClick={openCart}>
+      <button aria-label="Open cart" onClick={openCart} className='bg-white'>
         <OpenCart quantity={cart?.totalQuantity} />
       </button>
       <Transition show={isOpen}>
